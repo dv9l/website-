@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- hello from kaylee rowena! i hope you enjoy the code! <3 -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+
+   <link rel="stylesheet" href="/css/gallery.css" type="text/css" media="all">
+
+   <title>{{ title }} | dv9l(ity) </title>
+
+    <link rel="icon" type="image/x-icon" href="favicon-goes-here.png">
+    <!-- the icon that shows up in the address bar -->
+
+    <!-- HTML Meta Tags-->
+    <meta property="og:type" content="website" />
+    <meta name="description" content="art of dv9l" />
+    <meta property="og:image" content="put a link to your preview image for social media here.jpg">
+    <meta property="og:image:type" content="image/jpg">
+</head>
+
+<body>
+
+    <div id="top"></div>
+    <div id="to-top"><a href="#top" title="back to top">^</a></div>
+
+<header>
+        <h1><a class="h1" href="/">
+            dv9l
+            </a>
+        </h1>
+        a gallery of my art. wow!
+        <nav>
+            <a href="/about">
+                about
+            </a>
+            <a href="/doodles">
+            doodles
+            </a>
+            <a href="/illustration">
+            illustration
+            </a>
+            <a href="/links">
+                links
+            </a>
+        </nav>
+</header>
+
+
+<main>
+
+{{ content | safe }}
+
+<div id="lightbox" popover></div>
+ <!-- don't get rid of this div, even though it looks empty - this is what makes your image lightbox work! -->
+
+<!-- this bit is what makes the image lightbox work! -->
+</main>
+
+    <footer>
+        <p>dv9l / 2026</p>
+        <p>base code by <a href="https://kayleerowena.com/blog/2025/code-template">kaylee rowena</a>
+            <br><a href="https://bsky.app">bsky</a> | <a
+                href="https://www.twitter.com/dv9lity">twitter</a> | <a
+                href="https://dv9l.tumblr.com/">tumblr</a> | <a href="https://ko-fi.com/">tip
+                jar</a> | <a href="mailto:your@email.address">email</a>
+    </footer>  
+</body>
+
+<script>
+    const popover = document.getElementById("lightbox");
+
+    $('#gallery img').click(function (e) {
+        var image_src = $(this).attr("src");
+        $(this).attr('popovertarget', 'lightbox');
+        $('#lightbox').html('<img src="' + image_src + '" />');
+        popover.showPopover();
+        $('#lightbox').append('<button popovertarget="lightbox" popovertargetaction="hide">x</button>');
+    });
+</script>
+</html>
