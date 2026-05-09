@@ -2,8 +2,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("src/js");
 
-  return {
+   return {
     dir: {
       input: "src",
       output: "_site",

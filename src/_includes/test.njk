@@ -1,0 +1,44 @@
+---
+
+layout: test2.njk
+
+---
+ <div id="top"></div>
+    <div id="to-top"><a href="#top" title="back to top">^</a></div>
+
+    <header>
+        <h1><a class="h1" href="/">
+            your name goes here
+            </a>
+        </h1>
+        you could also put an image here, if you wanted! or a subtitle!
+
+        <nav>
+            <a href="/about">
+                your navigation
+            </a>
+            <a href="/comics">
+                links
+            </a>
+            <a href="/illustration">
+                go
+            </a>
+            <a href="/links">
+                here!
+            </a>
+        </nav>
+    </header>
+
+    <main>
+     {{ content | safe }}
+    </main>
+
+    <footer>
+        <br>(c) you, 2025 - forever.
+        <p>base code by <a href="">kaylee rowena</a>. 
+        <p>you can put social media links here too:
+            <br><a href="https://bsky.app">bsky</a> | <a
+                href="https://www.instagram.com">instagram</a> | <a
+                href="https://tumblr.com/">tumblr</a> | <a href="https://ko-fi.com">tip
+                jar</a> | <a href="mailto:your@email.address">email</a>
+    </footer>

@@ -6,11 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
-
    <link rel="stylesheet" href="/css/gallery.css" type="text/css" media="all">
+   <link rel="stylesheet" href="/css/glightbox.css" type="text/css" media="all">
 
-   <title>{{ title }} | dv9l(ity) </title>
+   <title> | dv9l(ity) </title>
 
     <link rel="icon" type="image/x-icon" href="favicon-goes-here.png">
     <!-- the icon that shows up in the address bar -->
@@ -53,12 +52,32 @@
 
 <main>
 
-{{ content | safe }}
+<div class ="gallery">
+  <a
+   href="/img/imagetest-square.jpg"
+   data-description="you can add descriptions to images too!"
+   data-type="image"
+   class="glightbox">
+   <img src="/img/imagetest-square.jpg">
+    </a>
+<p><a
+   href="/img/imagetest-square.jpg"
+   data-description=""
+   data-type="image"
+   class="glightbox">
+<img src="/img/imagetest-square.jpg">
+</a></p>
+<p><a
+   href="/img/imagetest-square.jpg"
+   data-description=""
+   data-type="image"
+   class="glightbox">
+<img src="/img/imagetest-square.jpg">
+</a></p>
+</div>
 
-<div id="lightbox" popover></div>
- <!-- don't get rid of this div, even though it looks empty - this is what makes your image lightbox work! -->
 
-<!-- this bit is what makes the image lightbox work! -->
+
 </main>
 
     <footer>
@@ -70,17 +89,7 @@
                 href="https://dv9l.tumblr.com/">tumblr</a> | <a href="https://ko-fi.com/">tip
                 jar</a> | <a href="mailto:your@email.address">email</a>
     </footer>  
+<script src="/js/glightbox.js"></script>
+<script src="/js/glightbox-setup.js"></script>
 </body>
-
-<script>
-    const popover = document.getElementById("lightbox");
-
-    $('#gallery img').click(function (e) {
-        var image_src = $(this).attr("src");
-        $(this).attr('popovertarget', 'lightbox');
-        $('#lightbox').html('<img src="' + image_src + '" />');
-        popover.showPopover();
-        $('#lightbox').append('<button popovertarget="lightbox" popovertargetaction="hide">x</button>');
-    });
-</script>
 </html>
