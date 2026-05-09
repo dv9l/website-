@@ -4,7 +4,7 @@ layout: test.njk
 
 ---
 
-<div class ="gallery">
+<div id="gallery" class="columns">
   <a
    href="/img/imagetest-square.jpg"
    data-description="you can add descriptions to images too!"
