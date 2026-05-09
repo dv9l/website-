@@ -64,4 +64,10 @@ title: gallery of dv9l
                     Caption
                 </figcaption>
             </figure>
+            <figure>
+                <img src="/img/imagetest-square.jpg">
+                <figcaption>
+                    Caption
+                </figcaption>
+            </figure>
 </div>

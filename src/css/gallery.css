@@ -14,13 +14,13 @@
   /* gallery styling */
   --minimum-img-width: 150px;
   --maximum-img-width: 400px;
-  --maximum-columns: 2;
+  --maximum-columns: 3;
   --image-background: #fff;
   --column-gap: var(--spacing);
 
   /* misc styling */
-  --max-width: 500px;
-  --spacing: 15px;
+  --max-width: 600px;
+  --spacing: 0.9em;
   --border-radius: 4px;
   --underline: wavy var(--accent-light);
   --border: dashed #7b7aa4 1px;
@@ -197,7 +197,7 @@ blockquote {
 }
 
 hr {
-  width: 60%;
+  width: 100%;
   border-color: #7b7aa4;
 }
 
@@ -238,7 +238,7 @@ footer::before {
   text-align-last: justify;
   width: 50%;
   margin: var(--spacing) auto;
-  display: table;
+  display: none;
   text-decoration: underline var(--underline);
   text-decoration-thickness: 0.1em;
 }
@@ -300,12 +300,13 @@ h4 {
 }
 
 #gallery img:first-of-type {
-  margin-top: 0;
+  margin-top: auto;
 }
 
 figure {
-  margin: var(--spacing) auto;
+  margin: 0 0 0.5em 0;
   break-inside: avoid;
+  overflow: hidden;
 }
 
 /* lightbox */

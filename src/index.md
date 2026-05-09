@@ -62,7 +62,6 @@ Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Qui
 # 05/07/26
 
            Switched to a new and cooler looking template. This template is much more suited to my design sensibilities and I ain't building a website by hand I am NOT a coder
-        </section>
 
  <section>
           section to perhaps put some buttons once I actually acquire them

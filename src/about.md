@@ -34,6 +34,8 @@ You can do whatever you want in an about page! Including listing links to social
 - AI: The Somnium Files series
 - When They Cry Series (Higurashi, Umineko, Ciconia)
 - Undertale/Deltarune
+</section>
+<section>
 
 # Uses
 
@@ -45,7 +47,7 @@ You can do whatever you want in an about page! Including listing links to social
 
 ### Tablet
 
-- (Tablet Specs here)
+-  iPad Air (M3) 
 
 ### Accessories
 
@@ -53,7 +55,9 @@ You can do whatever you want in an about page! Including listing links to social
 
 ## Software
 
-Insert Softwares here
+- Clip Studio Paint
+- Procreate
+- Aseprite 
 
 </section>
 </div>
