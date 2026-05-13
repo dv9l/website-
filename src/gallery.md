@@ -1,6 +1,6 @@
 ---
 layout: gallery.njk
-title: gallery of dv9l
+title: gallery
 ---
 
 <div id="gallery" class="columns">

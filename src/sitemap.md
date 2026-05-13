@@ -1,5 +1,6 @@
 ---
 layout: base.njk
+title: sitemap
 ---
 
 <div class="content">
@@ -16,8 +17,8 @@ sitemap
 
 - about
 
-- [about me](/about#about-me)
-- [socials](/about#about-me)
+- [about me](/about)
+- [socials](/about#links)
 
 - pages
 
