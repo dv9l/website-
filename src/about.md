@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: about 
+title: about
 ---
 
 <div class="content">
@@ -19,7 +19,7 @@ I am mainly a fanartist drawing whatever I like but behind the scenes I'm cookin
 </div>
           <div class="flex-image">
 
-![](/img/imagetest-4-3-v.jpg)
+![](/img/avatar_1205e748a534_128.png)
 
   </div>
         </div>
@@ -27,15 +27,21 @@ I am mainly a fanartist drawing whatever I like but behind the scenes I'm cookin
 
 <section>
 
-# Title
+# More About Me
 
-You can do whatever you want in an about page! Including listing links to socials, or making a list of your interests...
+## Fun Facts
+
+List of fun facts idk I'll do this another time
 
 ## Interests
 
+- Pokemon
 - AI: The Somnium Files series
+- Zero Escape Series
 - When They Cry Series (Higurashi, Umineko, Ciconia)
 - Undertale/Deltarune
+- Dungeon Meshi
+
 </section>
 <section>
 
@@ -45,28 +51,55 @@ You can do whatever you want in an about page! Including listing links to social
 
 ### PC
 
-- Lenovo Legion 
+- Legion 5 15IAH7
 
 ### Tablet
 
--  iPad Air (M3) 
+- iPad Air (M3) 11 inch
+- Wacom Movink Pad 14
 
 ### Accessories
 
-- 8BitDo micro gamepad controller
+- Logitech G305 mouse
+- Apple Pencil Pro
+- Wacom Pro Pen 3
+- 8BitDo micro gamepad
 
 ## Software
 
-- Clip Studio Paint
-- Procreate
-- Adobe Fresco 
-- Aseprite 
+### Art
+
+- <u>Illustration Software</u>:
+  - Clip Studio Paint
+  - Procreate
+  - Adobe Fresco
+- <u>Pixel Art Software</u>:
+  - Aseprite
+- <u>Reference photo library manager</u>:
+  - Eagle
+
+### Utility
+
+- <u>Streaming/Recording</u>:
+  - OBS Studio
+- <u>Note-taking</u>:
+  - Obsidian
+- <u>Screenshots</u>
+  - ShareX
+
+## This site
+
+### Made with using:
+
+- VSCodium
+- 11ty/eleventy
 
 </section>
 
 <section>
 
 # LINKS
+
 <ul class ="arrow-list">
 <li> <a href="https://dv9l.tumblr.com"> Tumblr</a></li>
 <li> <a href="https://twitter.com/dv9lity">Twitter</a> </li>

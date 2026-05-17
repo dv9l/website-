@@ -28,6 +28,7 @@
 
   <!-- stylesheet -->
  <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/css/tabs.css">
 </head>
 
 <body>
@@ -74,8 +75,8 @@
 
       <div class="widget">
         <h3>Here's a widget</h3>
-        <center> <a href="https://vgen.co/dv9l"><img src="/img/vgen.webp" alt="Commission me on VGen.co" width= 200px></a>
-        <a href="https://ko-fi.com/dv9lity"><img src="/img/kofi.webp" alt="Support me on Ko-fi" width="200px"></a> </center>
+        <center><a href="https://vgen.co/dv9l"><img src="/img/vgen.webp" alt="Commission me on VGen.co" width= 200px></a>
+        <a href="https://ko-fi.com/dv9lity"><img src="/img/kofi.webp" alt="Support me on Ko-fi" width="200px"></a></center>
       </div>
 
       <div class="widget">
@@ -94,18 +95,22 @@
 <p>I am mainly a fanartist drawing whatever I like but behind the scenes I'm cooking up some crazy and awesome original works. Most of these ideas are mainly for games and I have zero game dev experience. Fun! But that won't stop me from seeing my dream projects through.</p>
 </div>
           <div class="flex-image">
-<p><img src="/img/imagetest-4-3-v.jpg" alt=""></p>
+<p><img src="/img/avatar_1205e748a534_128.png" alt=""></p>
   </div>
         </div>
  </section>
 <section>
-<h1>Title</h1>
-<p>You can do whatever you want in an about page! Including listing links to socials, or making a list of your interests...</p>
+<h1>More About Me</h1>
+<h2>Fun Facts</h2>
+<p>List of fun facts idk I'll do this another time</p>
 <h2>Interests</h2>
 <ul>
+<li>Pokemon</li>
 <li>AI: The Somnium Files series</li>
+<li>Zero Escape Series</li>
 <li>When They Cry Series (Higurashi, Umineko, Ciconia)</li>
 <li>Undertale/Deltarune</li>
+<li>Dungeon Meshi</li>
 </ul>
 </section>
 <section>
@@ -113,22 +118,64 @@
 <h2>Hardware</h2>
 <h3>PC</h3>
 <ul>
-<li>Lenovo Legion</li>
+<li>Legion 5 15IAH7</li>
 </ul>
 <h3>Tablet</h3>
 <ul>
-<li>iPad Air (M3)</li>
+<li>iPad Air (M3) 11 inch</li>
+<li>Wacom Movink Pad 14</li>
 </ul>
 <h3>Accessories</h3>
 <ul>
-<li>8BitDo micro gamepad controller</li>
+<li>Logitech G305 mouse</li>
+<li>Apple Pencil Pro</li>
+<li>Wacom Pro Pen 3</li>
+<li>8BitDo micro gamepad</li>
 </ul>
 <h2>Software</h2>
+<h3>Art</h3>
+<ul>
+<li><u>Illustration Software</u>:
 <ul>
 <li>Clip Studio Paint</li>
 <li>Procreate</li>
 <li>Adobe Fresco</li>
+</ul>
+</li>
+<li><u>Pixel Art Software</u>:
+<ul>
 <li>Aseprite</li>
+</ul>
+</li>
+<li><u>Reference photo library manager</u>:
+<ul>
+<li>Eagle</li>
+</ul>
+</li>
+</ul>
+<h3>Utility</h3>
+<ul>
+<li><u>Streaming/Recording</u>:
+<ul>
+<li>OBS Studio</li>
+</ul>
+</li>
+<li><u>Note-taking</u>:
+<ul>
+<li>Obsidian</li>
+</ul>
+</li>
+<li><u>Screenshots</u>
+<ul>
+<li>ShareX</li>
+</ul>
+</li>
+</ul>
+<h2>This site</h2>
+<h3>Made with using:</h3>
+<ul>
+<li>VSCodium</li>
+<li>11ty/eleventy</li>
 </ul>
 </section>
 <section>
@@ -146,14 +193,31 @@
 </section>
 </div>
 
-
-  </main>
-
-  <footer>
-    <p>dv9l / 2026</p>
+   </main>
+  
+   <footer>
+    <p> dv9l / 2026</p>
     <!-- credits for the template. remove this only if you credit me somewhere else on your site, like a credits page or in the sidebar! -->
     <p class="template-credits"><a href="https://debtdeath.neocities.org/templates">TEMPLATE: (C) CC-LINK</a></p>
   </footer>
 
-</body>
+  <script>
+ function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+ </body>
 </html>

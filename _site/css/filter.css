@@ -1,0 +1,171 @@
+	:root { /** customize your style by changing the variables in these brackets **/
+
+		--fic-metadata-divider: " // "; /** change this to your liking **/
+
+		/** some sizing, which you can change but I highly advise for you to keep the provided units (em, %, and px respectively). smaller than 1 can be used as decimals, e.g. 0.8 **/
+		--base-size: 1em;
+		--line-height: 150%;
+		--main-width: 60em;
+		--border-size: 2px;
+
+		/** calculations for sizing, you might not want to touch these **/
+		--size-quarter: calc(var(--base-size) / 4);
+		--size-half: calc(var(--base-size) / 2);
+		--size-one-half: calc(var(--base-size) * 1.5);
+		--size-double: calc(var(--base-size) * 2);
+	}
+
+	totop{
+		display: block;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding: var(--base-size);
+		border-top-left-radius: 30px;
+	}
+
+	#blurb {
+		padding: var(--size-double) 0;
+		border-bottom: var(--border-size) var(--main-border-style) var(--accent);
+	}
+
+	.filterFic {
+		width: auto;
+		margin: 15px 0;
+		display: none;
+	}
+
+	fic-summary {
+		padding: 10px 0;
+		margin: 0 20px;
+		display: block;
+	}
+
+	fic-summary p {
+		padding: 0 0 0.5em;
+		margin: 0;
+	}
+
+	fic-summary p:last-child {
+		padding: 0;
+	}
+
+	.show {
+		display: block;
+	}
+
+	#fandom-navigation {
+		margin: var(--size-double) 0 0;
+	}
+
+	.masterlist {
+		margin: 10px 0;
+		overflow: hidden;
+	}
+
+	.fandomButton {
+		border: none;
+		outline: none;
+		padding: var(--base-size);
+		background-color: #7b7aa;
+		display: inline-block;
+		margin: var(--size-quarter) var(--size-quarter) var(--size-quarter) 0;
+		font-size: var(--base-size);
+		color: var(--text);
+	}
+
+	.fandomButton:hover {
+		background-color: var(--accent-dark);
+		color: white;
+	}
+
+	.fandomButton.active {
+		background-color: var(--accent);
+		color: white;
+	}
+
+	.filterFic ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.filterFic ul li {
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+
+	.filterFic ul li:after {
+		content: var(--fic-metadata-divider);
+		color: var(--accent);
+	}
+
+	.filterFic ul li:last-child:after {
+		content: " ";
+	}
+
+	summary:hover, details[open] > summary{
+		color: var(--accent-dark);
+		font-weight: bold;
+	}
+
+	img{
+		max-width: 100%;;
+	}
+
+	@media (max-width: 900px) {
+		main {
+			width: 95vw;
+			padding: var(--base-size);
+		}
+	}
+
+	@media (max-width: 600px) {
+		main {
+			width: 95%;
+			padding: var(--base-size) 0.5em;
+		}
+		#head,
+		#blurb,
+		#footer {
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+		}
+		h1 {
+			font-size: 2em;
+		}
+		h2 {
+			font-size: 1.2em;
+		}
+		.fandomButton {
+			font-size: 0.95em;
+			padding: 0.5em 0.7em;
+			margin-bottom: 0.3em;
+		}
+		.filterFic ul {
+			margin: 0.5em 0.5em;
+		}
+		.filterFic {
+			margin: 10px 0;
+			padding: 0 0.2em;
+		}
+
+		totop{
+			display: none; /** hides to top link on mobile, but you can comment or delete this to keep it visible **/
+		}
+	}
+
+	@media (max-width: 400px) {
+		h1 {
+			font-size: 1.8em;
+		}
+		h2 {
+			font-size: 1.3em;
+		}
+		.fandomButton {
+			font-size: 0.85em;
+			padding: 0.4em 0.5em;
+		}
+	}
+

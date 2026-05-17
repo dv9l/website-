@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- change this to your site title! this is the text on the browser tab -->
-  <title>home | dv9l(ity) </title>
+  <title>{{ title }} | dv9l(ity) </title>
 
   <!-- meta tags for site previews and social media, change this to be yours! -->
   <meta name="description" content="dv9l's website">
@@ -28,7 +28,7 @@
 
   <!-- stylesheet -->
  <link rel="stylesheet" href="/css/style.css">
- <link rel="stylesheet" href="/css/tabs.css">
+ <link rel="stylesheet" href="/css/filter.css">
 </head>
 
 <body>
@@ -75,8 +75,8 @@
 
       <div class="widget">
         <h3>Here's a widget</h3>
-        <center><a href="https://vgen.co/dv9l"><img src="/img/vgen.webp" alt="Commission me on VGen.co" width= 200px></a>
-        <a href="https://ko-fi.com/dv9lity"><img src="/img/kofi.webp" alt="Support me on Ko-fi" width="200px"></a></center>
+        <center> <a href="https://vgen.co/dv9l"><img src="/img/vgen.webp" alt="Commission me on VGen.co" width= 200px></a>
+        <a href="https://ko-fi.com/dv9lity"><img src="/img/kofi.webp" alt="Support me on Ko-fi" width="200px"></a> </center>
       </div>
 
       <div class="widget">
@@ -86,75 +86,60 @@
       </div>
     </div>
 
-   <div class="content">
-<!-- here's a section with a two-column layout -->
-  <section>
-<h1>Welcome to my webbed site</h1>
-   <div class="flex-columns">
-          <div class="flex-text">
-<h2>Please read this first!</h2>
-<h3>THIS SITE IS A WORK IN PROGRESS</h3>
-<h4>4/12/26</h4>
-<p>I am working on my neocities for the first time in (checks notes) almost 3 years and hopefully I won't abandon it for another 3 years or more I fucking hate social media I just wanna have my own space on the internet</p>
-<p><button>Click here for nothing!</button></p>
-   </div>
-          <div class="flex-image">
-            <img src="/img/imagetest-4-3-v.jpg" alt="">
-          </div>
-        </div>
- </section>
-<div class="half-width">
-        <section>
-<h2>To Do list</h2>
-<ul class="todo-list">
-<li> Finish Home Page</li>
-<li> Finish About Page</li>
-<li> Finish Gallery Page</li>
-<li> Finish Resources Page</li>
-<li> Add Toggles </li>
-<ul class ="todo-list">
-    <li> Add Light/Dark Toggle</li>
-    <li> Add Font Toggle </li>
-    <li> Add Static Gif Toggle </li>
-    </ul>
-<li> Make Blog </li>
-</ul>
-</section>
-<section>
-<h2>UPDATES</h2>
-<h1>05/07/26</h1>
-<p>Switched to a new and cooler looking template. This template is much more suited to my design sensibilities and I ain't building a website by hand I am NOT a coder</p>
-</section>
- <section>
-          section to perhaps put some buttons once I actually acquire them
- </section>
- </div>
-
+   {{ content | safe }}
    </main>
-  
-   <footer>
-    <p> dv9l / 2026</p>
+
+  <footer>
+    <p>dv9l / 2026</p>
     <!-- credits for the template. remove this only if you credit me somewhere else on your site, like a credits page or in the sidebar! -->
     <p class="template-credits"><a href="https://debtdeath.neocities.org/templates">TEMPLATE: (C) CC-LINK</a></p>
   </footer>
+<script type="text/javascript">
+			filterSelection("all");
+			function filterSelection(c) {
+				var x, i;
+				x = document.getElementsByClassName("filterFic");
+				if (c == "all") c = "";
+				for (i = 0; i < x.length; i++) {
+					w3RemoveClass(x[i], "show");
+					if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+				}
+			}
 
-  <script>
- function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+			function w3AddClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					if (arr1.indexOf(arr2[i]) == -1) {
+						element.className += " " + arr2[i];
+					}
+				}
+			}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+			function w3RemoveClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					while (arr1.indexOf(arr2[i]) > -1) {
+						arr1.splice(arr1.indexOf(arr2[i]), 1);
+					}
+				}
+				element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var fandomButtonmasterlist = document.getElementById("fandom-navigation");
+			var fandomButtons = fandomButtonmasterlist.getElementsByClassName("fandomButton");
+			for (var i = 0; i < fandomButtons.length; i++) {
+				fandomButtons[i].addEventListener("click", function () {
+					var current = document.getElementsByClassName("active");
+					current[0].className = current[0].className.replace(" active", "");
+					this.className += " active";
+				});
+			}
+		</script>
+
  </body>
 </html>

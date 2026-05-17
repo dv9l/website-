@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- 
+
+                      CC-LINK v1.1
+
+      /// A WEBSITE TEMPLATE BY CC DEBTDEATH \\\
+
+          https://debtdeath.neocities.org/
+
+ -->
+
+  <!-- regular ol' html meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- change this to your site title! this is the text on the browser tab -->
+  <title>resources | dv9l(ity) </title>
+
+  <!-- meta tags for site previews and social media, change this to be yours! -->
+  <meta name="description" content="dv9l's website">
+  <meta name="author" content="dv9l">
+
+  <!-- you can make a 32x32px .png and convert it to .ico at https://favicon.io/ -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- stylesheet -->
+ <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/css/filter.css">
+</head>
+
+<body>
+
+  <!-- header that only shows up on mobile -->
+  <header class="mobile-only">
+    <!-- you can replace the <p> contents with an emoji if you want -->
+    <div><p>///</p></div>
+    <!-- this takes you back to the homepage -->
+    <div><a href="/">home</a></div>
+    <!-- this links to the menu -->
+    <div><a href="#menu">menu</a></div>
+  </header>
+
+  <!-- main content of the page -->
+  <main>
+
+    <div class="sidebar">
+            <!-- sidebar menu. in mobile-view, this moves to the end of the page. -->
+      <nav id="menu">
+
+        <!-- for categories linking to just one page, a simple link is all you need. -->
+        <a href="/" class="category">home</a>
+                <!-- for categories that have sublinks/multiple pages, chuck them into a details & summary combo, with the subcategories in a list. -->
+        <details>
+          <summary class="category">pages</summary>
+            <!-- DO NOT remove class="tree-view" in the nav -->
+            <div class="tree-view">
+              <ul>
+                <li><a href="/page">sample page</a></li>
+                <li><a href="/gallery">gallery</a></li>
+              </ul>
+            </div>
+        </details>
+
+        <a href="/about" class="category">about</a>
+
+        <a href="/resources" class="category">resources</a>
+              <a href="/sitemap" class="category">sitemap</a>
+
+      </nav>
+
+      <!-- optional widgets -->
+
+      <div class="widget">
+        <h3>Here's a widget</h3>
+        <center> <a href="https://vgen.co/dv9l"><img src="/img/vgen.webp" alt="Commission me on VGen.co" width= 200px></a>
+        <a href="https://ko-fi.com/dv9lity"><img src="/img/kofi.webp" alt="Support me on Ko-fi" width="200px"></a> </center>
+      </div>
+
+      <div class="widget">
+        <h3>&#128077</h3>
+        <img src="/img/mizukithumbsup.webp" alt="Mizuki Thumbs Up">
+        <p>	&#128077</p>
+      </div>
+    </div>
+
+   <div class="content">
+<section>
+<!-- navigation for your fandom buttons: EDIT THESE so they make sense to YOU-->
+<nav id="fandom-navigation">
+<!-- don't change this one, it shows all your fic across all fandoms -->
+<p><button class="fandomButton active" onclick="filterSelection('all')">All Fandoms</button></p>
+<!-- individual fandoms -->
+<p><button class="fandomButton" onclick="filterSelection('badbuddy')">Bad Buddy</button>
+<button class="fandomButton" onclick="filterSelection('mdzs')">Mo Dao Zu Shi</button>
+<button class="fandomButton" onclick="filterSelection('haikyuu')">Haikyuu!!</button>
+<button  class="fandomButton" onclick="filterSelection('kurokonobasuke')">Kuroko No Basuke</button>
+<button class="fandomButton" onclick="filterSelection('spiderverse')">Spider-verse</button>
+<button class="fandomButton" onclick="filterSelection('jennifersbody')">Jennifer's Body</button>
+<button class="fandomButton" onclick="filterSelection('rpf')">RPF</button></p>
+<!-- new fandoms can be added with <button class="fandomButton" onclick="filterSelection('your-fandom')">Your Fandom</button>-->
+</nav>
+<!-- end navigation for your fandom buttons-->
+<div class="masterlist">
+<!-- where your masterlist of fic begins, BEFORE any fic items. do not get rid of this-->
+<div class="filterFic mdzs">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/68/">get wild</a>
+						</li>
+						<li>Mo Dao Zu Shi</li>
+						<li>Lan Wangji/Wei Wuxian</li>
+						<li>Explicit</li>
+						<li>23,925</li>
+					</ul>
+					<fic-summary>
+						Wei Ying didn’t expect to enter a weird… something-with-benefits-plus-power-play with the captain of the Gusu basketball team. He’s not sure if it’s worth it.
+					</fic-summary>
+				</div>
+<div class="filterFic badbuddy">
+	<ul>
+		<li>
+			<a href="https://aroceu.com/fic/1722/">how to be sweet again</a>
+		</li>
+		<li>Bad Buddy</li>
+		<li>Pat/Pran</li>
+		<li>Mature</li>
+		<li>7,972</li>
+	</ul>
+		<fic-summary>Pran flies out to Singapore, and Pat misses him. Terribly.
+    </fic-summary>
+</div>
+<div class="filterFic badbuddy">
+	<ul>
+		<li>
+			<a href="https://aroceu.com/fic/1682/">getting used to being held by you</a>
+		</li>
+		<li>Bad Buddy</li>
+		<li>Pat/Pran</li>
+		<li>Teen</li>
+		<li>1,483</li>
+	</ul>
+	<fic-summary>
+		<p>Pat's door was locked. Pran expected as much, but it still stung.</p>
+		<p>And maybe Pran was too drunk to know when to give up.</p>
+	</fic-summary>
+ </div>
+</section>
+</div>
+<!-- end masterlist -->
+
+   </main>
+
+  <footer>
+    <p>dv9l / 2026</p>
+    <!-- credits for the template. remove this only if you credit me somewhere else on your site, like a credits page or in the sidebar! -->
+    <p class="template-credits"><a href="https://debtdeath.neocities.org/templates">TEMPLATE: (C) CC-LINK</a></p>
+  </footer>
+<script type="text/javascript">
+			filterSelection("all");
+			function filterSelection(c) {
+				var x, i;
+				x = document.getElementsByClassName("filterFic");
+				if (c == "all") c = "";
+				for (i = 0; i < x.length; i++) {
+					w3RemoveClass(x[i], "show");
+					if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+				}
+			}
+
+			function w3AddClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					if (arr1.indexOf(arr2[i]) == -1) {
+						element.className += " " + arr2[i];
+					}
+				}
+			}
+
+			function w3RemoveClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					while (arr1.indexOf(arr2[i]) > -1) {
+						arr1.splice(arr1.indexOf(arr2[i]), 1);
+					}
+				}
+				element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var fandomButtonmasterlist = document.getElementById("fandom-navigation");
+			var fandomButtons = fandomButtonmasterlist.getElementsByClassName("fandomButton");
+			for (var i = 0; i < fandomButtons.length; i++) {
+				fandomButtons[i].addEventListener("click", function () {
+					var current = document.getElementsByClassName("active");
+					current[0].className = current[0].className.replace(" active", "");
+					this.className += " active";
+				});
+			}
+		</script>
+
+ </body>
+</html>

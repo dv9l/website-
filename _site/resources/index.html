@@ -28,6 +28,7 @@
 
   <!-- stylesheet -->
  <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/css/tabs.css">
 </head>
 
 <body>
@@ -74,8 +75,8 @@
 
       <div class="widget">
         <h3>Here's a widget</h3>
-        <center> <a href="https://vgen.co/dv9l"><img src="/img/vgen.webp" alt="Commission me on VGen.co" width= 200px></a>
-        <a href="https://ko-fi.com/dv9lity"><img src="/img/kofi.webp" alt="Support me on Ko-fi" width="200px"></a> </center>
+        <center><a href="https://vgen.co/dv9l"><img src="/img/vgen.webp" alt="Commission me on VGen.co" width= 200px></a>
+        <a href="https://ko-fi.com/dv9lity"><img src="/img/kofi.webp" alt="Support me on Ko-fi" width="200px"></a></center>
       </div>
 
       <div class="widget">
@@ -86,13 +87,41 @@
     </div>
 
    <div class="content">
-   <section>
+  <section>
 <h1>Resources</h1>
 <p><strong>A collection of various helpful resources</strong></p>
+   <!-- Tab links -->
+   <div class="tab">
+   <button class="tablinks" onclick="openTab(event, 'WebmasterResources')" id="defaultOpen">Webmaster Resources</button>
+   <button class="tablinks" onclick="openTab(event, 'ReferenceLibraries')">Reference Libraries</button>
+   <button class="tablinks" onclick="openTab(event, 'SoftwareforArtists')">Software for Artists</button>
+   <button class="tablinks" onclick="openTab(event, 'OnlineToolsforArtists')">Online Tools for Artists</button>
+   <button class="tablinks" onclick="openTab(event, 'FYI')">For Your Information</button>
+   <button class="tablinks" onclick="openTab(event, 'usefulsites')">Useful Sites</button>
+   </div>
+<!-- Tab content -->
+   <div id="WebmasterResources" class="tabcontent">
 <h2>Webmaster resources</h2>
+<ul>
+<li>
+<p><a href="https://petrapixel.neocities.org/coding/">petrapixel's coding tutorials and resources</a> - Amazing resource for webmasters on Neocities/the personal web</p>
+</li>
+<li>
+<p><a href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49">Resources List for the Personal Web</a> - Masterlist resource for the personal web by 32-bit cafe</p>
+</li>
+<li>
 <p><a href="https://accessible-webmastery.neocities.org/">Sparrow's Guide to Accessible Webmastery</a> - Guides and resources to make your website more accessible!</p>
+</li>
+<li>
 <p><a href="https://htmlcheatsheet.com/">HTML Cheat Sheet</a> - an HTML cheatsheet</p>
-<p><a href="https://sadgrl.online/resources/">sadgrlonline</a> - webmaster resources from sadgrl</p>
+</li>
+<li>
+<p><a href="https://sadgrl.online/resources/">sadgrlonline</a> - webmaster resources from
+sadgrl</p>
+  </div>
+   <div id="ReferenceLibraries" class="tabcontent">
+</li>
+</ul>
 <h2>Online reference libraries for artists</h2>
 <ul>
 <li><a href="https://line-of-action.com/">Line of Action</a> - reference photos and practice tools for visual artists including figure drawing, animal drawing, scenes &amp; environment drawing, and more.
@@ -106,7 +135,7 @@
 </ul>
 </li>
 <li><a href="https://www.posemaniacs.com/">Posemaniacs</a>- free 3d anatomy + pose reference library</li>
-<li><a href="https://x6ud.github.io/#/">x6ud.github.io/#/</a>-  Find animal reference photos based on skull angle
+<li><a href="https://x6ud.github.io/#/">x6ud.github.io/#/</a>- Find animal reference photos based on skull angle
 <ul>
 <li><a href="https://ko-fi.com/x6udpngx">Support the creator here</a></li>
 </ul>
@@ -118,38 +147,98 @@
 </li>
 <li><a href="https://film-grab.com/">FilmGrab</a>- large film reference library of movie stills
 <ul>
-<li><a href="https://www.patreon.com/filmgrab">Support the creator here</a></li>
-</ul>
+<li>
+<p><a href="https://www.patreon.com/filmgrab">Support the creator here</a></p>
+</div>
+  <div id="SoftwareforArtists" class="tabcontent">
 </li>
-</ul>
-<h2>Online resources and tools for artists</h2>
-<ul>
-<li><a href="https://coolors.co/">Coolors.co</a>- color palette generator</li>
-<li><a href="https://lospec.com/">Lospec</a>- tutorials, palette lists, gallery, tools and resources for mainly pixel art and other low-spec forms of art
-<ul>
-<li><a href="https://www.patreon.com/lospec/">Support the creator here</a></li>
 </ul>
 </li>
 </ul>
 <h2>Useful software for artists</h2>
 <ul>
-<li><a href="https://www.pureref.com/">pureref</a>- program available for Windows, Mac and Linux that helps view and organize reference images on your desktop. Free <em>if</em> you set the contribution price to $0 at checkout
+<li>
+<p><a href="https://www.pureref.com/">pureref</a>- program available for Windows, Mac and Linux that helps view and organize reference images on your desktop. Free <em>if</em> you set the contribution price to $0 at checkout</p>
 <ul>
 <li><a href="https://www.pureref.com/support_us.php">Support the creators here</a></li>
 </ul>
 </li>
-</ul>
- </section>
+<li>
+<p><a href="https://libresprite.github.io/#!/">Libresprite</a> - <u>Free and Open Source</u> pixel art program available for Windows, Mac and Linux. Fork of Aseprite.</p>
 </div>
+   <div id="OnlineToolsforArtists" class="tabcontent">
+</li>
+</ul>
+<h2>Online resources and tools for artists</h2>
+<ul>
+<li><a href="https://labisa-info.carrd.co/#about">labisa</a>- Resource and starting point for understanding accurate SWANA (South West Asian/North African) fashion and how Orientalism erases the true beauty of cultural costumes from SWANA regions.</li>
+<li><a href="https://coolors.co/">Coolors.co</a>- color palette generator</li>
+<li><a href="https://lospec.com/">Lospec</a>- tutorials, palette lists, gallery, tools and resources for mainly pixel art and other low-spec forms of art
+<ul>
+<li>
+<p><a href="https://www.patreon.com/lospec/">Support the creator here</a></p>
+</div>
+  <div id="FYI" class="tabcontent">
+</li>
+</ul>
+</li>
+</ul>
+<h2>For Your Information</h2>
+<ul>
+<li>
+<p><a href="https://decolonizepalestine.com/">Decolonize Palestine</a> - A collection of resources for organizers and anyone who wants to learn more about Palestine.</p>
+</li>
+<li>
+<p><a href="https://findhelp.org/">findhelp.org</a> - (US only) Get connected to resources for various needs like food, housing, medical, education,work, and more.</p>
+</li>
+<li>
+<p><a href="https://bank.green/">bank.green</a> - this website checks whether your bank is funding fossil fuels and has a filterable list of recommended green/ sustainable banks that you can switch to. Personally, I made the switch to Walden Bank for online banking.</p>
+ </div>
+<div id="usefulsites" class="tabcontent">
+</li>
+</ul>
+<h2>Useful Sites</h2>
+<ul>
+<li><a href="https://amix-design.com/tl/en/tool-dia/index.html">Triangle Relationship Generator</a> - Build character relationship charts for anime, manga, drama, fanfic, class rosters, org charts, and social graphs.
+<ul>
+<li><a href="https://buymeacoffee.com/tominaga">Support the creator</a></li>
+</ul>
+</li>
+<li><a href="https://towebp.app/">ToWebP.app</a>- Convert images to WebP file format fast and privately online
+<ul>
+<li><a href="https://donate.stripe.com/9AQ29g4p7f0fbMA7ss">Support the creator here</a></li>
+</ul>
+</div>
+</section>
+</div>
+</li>
+</ul>
 
-
-  </main>
-
-  <footer>
-    <p>dv9l / 2026</p>
+   </main>
+  
+   <footer>
+    <p> dv9l / 2026</p>
     <!-- credits for the template. remove this only if you credit me somewhere else on your site, like a credits page or in the sidebar! -->
     <p class="template-credits"><a href="https://debtdeath.neocities.org/templates">TEMPLATE: (C) CC-LINK</a></p>
   </footer>
 
-</body>
+  <script>
+ function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+ </body>
 </html>
